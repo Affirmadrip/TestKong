@@ -120,24 +120,27 @@ st.markdown(f"""
 st.markdown("<div class='subtitle'>Our Products</div>", unsafe_allow_html=True)
 
 # รายการสินค้า
+image_path = "image/1.jpeg"  # Use the same image for all products
+
 products = [
-    {"name": "Nike Sneakers", "price": "$120", "image": "https://source.unsplash.com/200x200/?shoes"},
-    {"name": "Luxury Watch", "price": "$250", "image": "https://source.unsplash.com/200x200/?watch"},
-    {"name": "Leather Bag", "price": "$180", "image": "https://source.unsplash.com/200x200/?bag"},
-    {"name": "Wireless Headphones", "price": "$90", "image": "https://source.unsplash.com/200x200/?headphones"},
-    {"name": "Stylish Sunglasses", "price": "$60", "image": "https://source.unsplash.com/200x200/?sunglasses"},
-    {"name": "Gaming Laptop", "price": "$1500", "image": "https://source.unsplash.com/200x200/?laptop"},
-    {"name": "Smartphone", "price": "$799", "image": "https://source.unsplash.com/200x200/?phone"},
-    {"name": "Digital Camera", "price": "$550", "image": "https://source.unsplash.com/200x200/?camera"},
-    {"name": "Gaming Console", "price": "$499", "image": "https://source.unsplash.com/200x200/?gaming"},
-    {"name": "Mechanical Keyboard", "price": "$120", "image": "https://source.unsplash.com/200x200/?keyboard"},
-    {"name": "Wireless Mouse", "price": "$40", "image": "https://source.unsplash.com/200x200/?mouse"},
-    {"name": "4K Monitor", "price": "$350", "image": "https://source.unsplash.com/200x200/?monitor"},
-    {"name": "Luxury Perfume", "price": "$75", "image": "https://source.unsplash.com/200x200/?perfume"},
-    {"name": "Premium Coffee Beans", "price": "$25", "image": "https://source.unsplash.com/200x200/?coffee"},
-    {"name": "Portable Speaker", "price": "$99", "image": "https://source.unsplash.com/200x200/?speaker"},
-    {"name": "Mountain Bike", "price": "$800", "image": "https://source.unsplash.com/200x200/?bike"},
+    {"name": "Nike Sneakers", "price": "$120", "image": image_path},
+    {"name": "Luxury Watch", "price": "$250", "image": image_path},
+    {"name": "Leather Bag", "price": "$180", "image": image_path},
+    {"name": "Wireless Headphones", "price": "$90", "image": image_path},
+    {"name": "Stylish Sunglasses", "price": "$60", "image": image_path},
+    {"name": "Gaming Laptop", "price": "$1500", "image": image_path},
+    {"name": "Smartphone", "price": "$799", "image": image_path},
+    {"name": "Digital Camera", "price": "$550", "image": image_path},
+    {"name": "Gaming Console", "price": "$499", "image": image_path},
+    {"name": "Mechanical Keyboard", "price": "$120", "image": image_path},
+    {"name": "Wireless Mouse", "price": "$40", "image": image_path},
+    {"name": "4K Monitor", "price": "$350", "image": image_path},
+    {"name": "Luxury Perfume", "price": "$75", "image": image_path},
+    {"name": "Premium Coffee Beans", "price": "$25", "image": image_path},
+    {"name": "Portable Speaker", "price": "$99", "image": image_path},
+    {"name": "Mountain Bike", "price": "$800", "image": image_path},
 ]
+
 
 # แสดงสินค้าเป็นตาราง 4×4 พร้อมเพิ่มระยะห่าง
 rows = 4
